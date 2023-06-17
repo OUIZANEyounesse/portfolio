@@ -6,7 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Button } from "@/components";
 import { LogoUrl } from "@/constants/imagesUrl";
 import CustumSpan from "../button/CustumSpan";
-import { NavbarItem } from "@/constants/data";
+import { NavbarItem, InfoProfile } from "@/constants/data";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
             <Link href={`/`} className="img">
               <Image src={LogoUrl} alt="logo youizane" width={60} height={60} />
             </Link>
-            YOuizane
+            {InfoProfile.userName}
           </div>
           <div className="right flex items-center">
             <div
