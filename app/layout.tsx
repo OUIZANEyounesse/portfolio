@@ -3,7 +3,7 @@ import { Navbar, Footer } from '@/components';
 
 export const metadata = {
   title: 'OUIZANE Younesse',
-  description: 'portfolio create by ouizane younesse',
+  description: 'Portfolio create by ouizane younesse',
 }
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body >
+      <body className="bg-[#282C33]">
         <Navbar/>
         {children}
         <Footer/>
