@@ -2,7 +2,7 @@ import { InfoProfile } from "@/constants/data";
 import { LogoUrl } from "@/constants/imagesUrl";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineYoutube } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineWhatsApp, AiOutlineYoutube } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className="relative">
@@ -33,17 +33,17 @@ const Footer = () => {
             <h2 className=" text-white text-2xl font-medium mb-3">Social Media</h2>
             {/* media */}
             <div className="flex items-center gap-8 text-white">
-              <Link href={InfoProfile.socialLink.linkedin}>
+              <Link href={InfoProfile.socialLink.linkedin} target="_blank">
                 <AiOutlineLinkedin />
               </Link>
-              <Link href={InfoProfile.socialLink.github}>
+              <Link href={InfoProfile.socialLink.github} target="_blank">
                 <AiOutlineGithub />
               </Link>
-              <Link href={InfoProfile.socialLink.youtube}>
-                <AiOutlineGithub />
-              </Link>
-              <Link href={InfoProfile.socialLink.youtube}>
+              <Link href={InfoProfile.socialLink.youtube} target="_blank">
                 <AiOutlineYoutube />
+              </Link>
+              <Link href={InfoProfile.socialLink.whatsapp} target="_blank">
+                <AiOutlineWhatsApp />
               </Link>
             </div>
           </div>

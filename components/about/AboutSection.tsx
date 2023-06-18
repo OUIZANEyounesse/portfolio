@@ -1,7 +1,16 @@
-import { LogoUrl, MainUrl } from "@/constants/imagesUrl"
+'use client'
+import {  MainUrl } from "@/constants/imagesUrl"
 import Image from "next/image"
+import { Button } from '@/components';
+import { AiOutlineDoubleRight } from 'react-icons/ai';
+import {useRouter} from 'next/navigation';
+import { NavbarLinks } from "@/constants/data";
 
 const AboutSection = () => {
+const router = useRouter();
+  const handleNavigation = (path:string) =>{
+    router.push(path);
+  }
   return (
     <div>
         <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
@@ -13,9 +22,9 @@ const AboutSection = () => {
             <div className=" mb-12">
               <div className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
                 <div className="">
-                  <span className="text-[#C778DD]">#</span>about-me
+                  <span className="text-[#C778DD]">#</span>About-Me
                 </div>
-                <div className="line w-1/3 h-px bg-[#C778DD]"></div>
+                <div className="line w-1/3 h-px bg-[#C778DD]"/>
               </div>
             </div>
             {/* disc */}
@@ -23,24 +32,24 @@ const AboutSection = () => {
               Hello, i’m OUIZANE Younesse!
               <br />
               <br />
-              I’m a self-taught front-end developer based in zagora, morocco. I
-              can develop responsive websites from scratch and raise them into
+              I’m a FULL STACK Developer Next Js  based in zagora, morocco. I
+              can develop responsive websites  and raise them into
               modern user-friendly web experiences.
               <br />
               <br />
               Transforming my creativity and knowledge into a websites has been
-              my passion for over a year. I have been helping various clients to
-              establish their presence online. I always strive to learn about
+              my passion for over a year. . I always strive to learn about
               the newest technologies and frameworks.
             </p>
             {/* button */}
             <div className="mt-7">
-              <a
-                href="#"
-                className=" duration-150 hover:bg-[#C778DD33] border border-[#C778DD] px-4 py-2 text-white "
+              <Button 
+                title ="Read More"
+                containerStyles= "duration-150 hover:bg-[#C778DD33] border border-[#C778DD] px-4 py-2 text-white"
+                handleClick ={() => handleNavigation(NavbarLinks.about)}
               >
-                <button>Read more -{">"}</button>
-              </a>
+                <AiOutlineDoubleRight/>
+              </Button>
             </div>
           </div>
           {/* right */}
@@ -51,6 +60,7 @@ const AboutSection = () => {
                 width={300}
                 height ={900}
             />
+            <div className="line  h-px bg-[#C778DD]"/>
           </div>
         </div>
       </div>
@@ -60,3 +70,4 @@ const AboutSection = () => {
 }
 
 export default AboutSection
+
