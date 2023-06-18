@@ -21,8 +21,14 @@ export interface ProjectCardProps {
   languages: string[];
   title: string;
   discription: string;
+  viewLinks: any
 }
 export interface SkillsCardProps {
   title: string;
   languages: string[];
+}
+export interface DetailsProjectProps{
+  isOpen: boolean
+  closeModal: () => void
+  project: ProjectCardProps
 }

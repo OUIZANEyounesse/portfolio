@@ -34,7 +34,7 @@ const Hero = () => {
             />
           </div>
           <div className="border flex items-center gap-2 border-[#ABB2BF] p-2 text-[#ABB2BF]">
-            <div className="w-4 h-4 bg-[#C778DD]"></div>
+            <div className="w-4 h-4 bg-[#C778DD]"/>
             <div className="">
               Currently working on <span className="text-white">Portfolio</span>
             </div>

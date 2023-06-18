@@ -6,6 +6,7 @@ import ProjectSection from './project/ProjectSection';
 import Hero from './hero/Hero';
 import Skills from './skills/Skills';
 import Contact from './contact/Contact';
+import ProjectCard from './project/ProjectCard';
 export {
     Navbar,
     Footer,
@@ -14,5 +15,6 @@ export {
     ProjectSection,
     Hero,
     Skills,
-    Contact
+    Contact,
+    ProjectCard
 }

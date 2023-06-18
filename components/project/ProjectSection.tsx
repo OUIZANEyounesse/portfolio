@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { NavbarLinks, projects } from "@/constants/data";
 import ProjectCard from "./ProjectCard";
 import Button from "../button/Button";
@@ -7,9 +7,9 @@ import { useRouter } from "next/navigation";
 
 export default function ProjectSection() {
   const router = useRouter();
-  const handleNavigation = (path:string) =>{
+  const handleNavigation = (path: string) => {
     router.push(path);
-  }
+  };
   return (
     <div className="relative">
       <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
@@ -27,9 +27,11 @@ export default function ProjectSection() {
           </div>
           {/* right */}
           <div className=" text-white font-medium">
-            <Button 
+            <Button
               title="View All"
-              handleClick ={()=>{handleNavigation(NavbarLinks.work)}}
+              handleClick={() => {
+                handleNavigation(NavbarLinks.work);
+              }}
             >
               <AiOutlineArrowRight />
             </Button>
@@ -38,18 +40,21 @@ export default function ProjectSection() {
         {/* bottom */}
         <div className="flex flex-wrap justify-between gap-4 my-12">
           {/* cards */}
-          {projects.map(({ pathImage, languages, title, discription }) => {
-            return (
-              <>
-                <ProjectCard
-                  pathImage={pathImage}
-                  languages={languages}
-                  title={title}
-                  discription={discription}
-                />
-              </>
-            );
-          })}
+          {projects
+            .slice(0, 3)
+            .map(({ pathImage, languages, title, discription, viewLinks }) => {
+              return (
+                <>
+                  <ProjectCard
+                    pathImage={pathImage}
+                    languages={languages}
+                    title={title}
+                    discription={discription}
+                    viewLinks={viewLinks}
+                  />
+                </>
+              );
+            })}
         </div>
       </div>
     </div>

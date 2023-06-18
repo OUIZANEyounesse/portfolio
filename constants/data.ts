@@ -10,7 +10,7 @@ export const InfoProfile = {
     linkedin: "https://www.linkedin.com/in/younesse-ouizane/",
     github: "https://github.com/OUIZANEyounesse",
     youtube: "https://www.youtube.com/@younesseouizane",
-    whatsapp:"https://wa.me/212708862613"
+    whatsapp: "https://wa.me/212708862613",
   },
 };
 export const NavbarLinks = {
@@ -36,28 +36,61 @@ export const NavbarItem = [
 
 export const projects = [
   {
-    pathImage: "https://res.cloudinary.com/dnkuui7sz/image/upload/v1685039877/samples/sheep.jpg",
+    pathImage:
+      "https://res.cloudinary.com/dnkuui7sz/image/upload/v1685039877/samples/sheep.jpg",
     languages: ["html", "css", "javascript", "react", "tailwind css"],
     title: "ChertNodes",
     discription: "Minecraft servers hosting ",
-    pathDemo:"#"
+    viewLinks: [
+      {
+        title: "demo",
+        link: "",
+      },
+      {
+        title: "video",
+        link: "",
+      },
+      {
+        title: "github",
+        link: "",
+      },
+    ],
   },
   {
-    pathImage: "https://res.cloudinary.com/dnkuui7sz/image/upload/v1685039877/samples/sheep.jpg",
-    languages: ["html", "css", "javascript", "Node.js"],
-    title: "ProtectX",
-    discription: "Discord anti-crash bot ",
-
-    
+    pathImage:
+      "https://res.cloudinary.com/dnkuui7sz/image/upload/v1685039877/samples/sheep.jpg",
+    languages: ["html", "css", "javascript", "react", "tailwind css"],
+    title: "ChertNodes",
+    discription: "Minecraft servers hosting ",
+    viewLinks: [
+      {
+        title: "demo",
+        link: "",
+      },
+      {
+        title: "video",
+        link: "",
+      },
+    ],
   },
   {
-    pathImage: "https://res.cloudinary.com/dnkuui7sz/image/upload/v1685039877/samples/sheep.jpg",
-    languages: ["html", "css", "javascript", "Node.js", "python"],
-    title: "Kahoot Answers Viewer",
-    discription: "Get answers to your kahoot quiz ",
+    pathImage:
+      "https://res.cloudinary.com/dnkuui7sz/image/upload/v1685039877/samples/sheep.jpg",
+    languages: ["html", "css", "javascript", "react", "tailwind css"],
+    title: "ChertNodes",
+    discription: "Minecraft servers hosting ",
+    viewLinks: [
+      {
+        title: "demo",
+        link: "",
+      },
+      {
+        title: "video",
+        link: "",
+      },
+    ],
   },
 ];
-
 
 export const skills = [
   {
@@ -84,13 +117,6 @@ export const skills = [
   },
   {
     title: "Frameworks",
-    languages: [
-      "React",
-      "Vue",
-      "Disnake",
-      "Discord.js",
-      "Flask",
-      "Express.js",
-    ],
+    languages: ["React", "Vue", "Disnake", "Discord.js", "Flask", "Express.js"],
   },
 ];
