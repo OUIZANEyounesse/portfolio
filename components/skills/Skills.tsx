@@ -2,7 +2,8 @@ import { skills } from "@/constants/data";
 import { shapesUrl } from "@/constants/imagesUrl";
 import Image from "next/image";
 import SkillsCard from "./SkillsCard";
-const Skills = () => {
+import { SkillsProps } from "@/types";
+const Skills = ({ isLeftImage }: SkillsProps) => {
   return (
     <div>
       <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
@@ -18,7 +19,8 @@ const Skills = () => {
         {/* bottom */}
         <div className=" flex flex-wrap gap-10 justify-between items-center text-white">
           {/* left */}
-          <div data-aos="fade-right" className="mx-auto">
+        {isLeftImage && (
+          <div data-aos="fade-right" className="mx-auto ">
             <Image
               src={shapesUrl}
               alt="shapes"
@@ -27,15 +29,16 @@ const Skills = () => {
               className="w-full mx-auto"
             />
           </div>
+        )}
           {/* right & mapping */}
-          <div
-            data-aos="fade-left"
-            className=" mx-auto flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-4"
-          >
-            {skills.map(({ title, languages }) => (
-              <SkillsCard title={title} languages={languages} />
-            ))}
-          </div>
+            <div
+              data-aos="fade-left"
+              className=" mx-auto flex justify-around md:justify-end flex-wrap flex-1 gap-4"
+            >
+              {skills.map(({ title, languages }) => (
+                <SkillsCard title={title} languages={languages} />
+              ))}
+            </div>
         </div>
       </div>
     </div>

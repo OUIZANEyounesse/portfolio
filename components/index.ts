@@ -7,6 +7,7 @@ import Hero from './hero/Hero';
 import Skills from './skills/Skills';
 import Contact from './contact/Contact';
 import ProjectCard from './project/ProjectCard';
+import FunFacts from './funFacts/FunFacts';
 export {
     Navbar,
     Footer,
@@ -16,5 +17,6 @@ export {
     Hero,
     Skills,
     Contact,
-    ProjectCard
+    ProjectCard,
+    FunFacts
 }

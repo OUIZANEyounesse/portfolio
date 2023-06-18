@@ -21,14 +21,22 @@ export interface ProjectCardProps {
   languages: string[];
   title: string;
   discription: string;
-  viewLinks: any
+  viewLinks: any;
 }
 export interface SkillsCardProps {
   title: string;
   languages: string[];
 }
-export interface DetailsProjectProps{
-  isOpen: boolean
-  closeModal: () => void
-  project: ProjectCardProps
+export interface DetailsProjectProps {
+  isOpen: boolean;
+  closeModal: () => void;
+  project: ProjectCardProps;
+}
+
+export interface AboutSectionProps {
+  isMore?: boolean;
+}
+
+export interface SkillsProps {
+  isLeftImage?: boolean;
 }

@@ -5,8 +5,8 @@ const Page = () => {
     <div>
       <Hero/>
       <ProjectSection/>
-      <Skills/>
-      <AboutSection/>
+      <Skills isLeftImage = {true}/>
+      <AboutSection isMore= {true}/>
       <Contact/>
     </div>
   );

@@ -1,8 +1,9 @@
+import { Contact } from "@/components"
 
 const page = () => {
   return (
     <div>
-        contact Page
+        <Contact/>
       
     </div>
   )
