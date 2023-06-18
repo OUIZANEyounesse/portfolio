@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components";
 import {
+  AiFillFilePdf,
   AiOutlineDoubleLeft,
   AiOutlineDoubleRight,
   AiOutlineFundView,
@@ -17,13 +18,21 @@ const ProjectCard = ({
   title,
   discription,
   viewLinks,
+  ShortDiscription,
 }: ProjectCardProps) => {
   const handleNavigation = (path: string) => {
     window.open(path, "_blank");
   };
 
   const [isOpen, setIsOpen] = useState(false);
-  const project = { pathImage, languages, title, discription, viewLinks };
+  const project = {
+    pathImage,
+    languages,
+    title,
+    discription,
+    viewLinks,
+    ShortDiscription,
+  };
   return (
     <>
       <DetailProject
@@ -53,7 +62,7 @@ const ProjectCard = ({
         {/* discription  */}
         <div className=" p-4">
           <h2 className="text-[#FFFFFF] text-2xl font-medium">{title}</h2>
-          <p className=" py-4 text-[#ABB2BF]">{discription}</p>
+          <p className=" py-4 text-[#ABB2BF]">{ShortDiscription}</p>
           {/* /liks view  */}
           <div className="flex flex-wrap gap-1">
             <Button
@@ -72,7 +81,7 @@ const ProjectCard = ({
                     title="Demo"
                     containerStyles="flex-1 py-1 px-2 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150"
                     handleClick={() => {
-                      handleNavigation(pathImage);
+                      handleNavigation(item.link);
                     }}
                   >
                     <AiOutlineDoubleLeft />
@@ -84,18 +93,29 @@ const ProjectCard = ({
                     title="GitHub"
                     containerStyles="flex-1 py-1 px-2 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150"
                     handleClick={() => {
-                      handleNavigation(pathImage);
+                      handleNavigation(item.link);
                     }}
                   >
                     <AiOutlineFundView />
                   </Button>
-                )}{" "}
+                )}
+                {item.title === "document" && (
+                  <Button
+                    title="Document"
+                    containerStyles="flex-1 py-1 px-2 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150"
+                    handleClick={() => {
+                      handleNavigation(item.link);
+                    }}
+                  >
+                    <AiFillFilePdf />
+                  </Button>
+                )}
                 {item.title === "video" && (
                   <Button
                     title="Youtube"
                     containerStyles="flex-1 py-1 px-2 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150"
                     handleClick={() => {
-                      handleNavigation(pathImage);
+                      handleNavigation(item.link);
                     }}
                   >
                     <AiOutlineVideoCamera />

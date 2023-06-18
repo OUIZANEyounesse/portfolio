@@ -42,7 +42,7 @@ export default function ProjectSection() {
           {/* cards */}
           {projects
             .slice(0, 3)
-            .map(({ pathImage, languages, title, discription, viewLinks }) => {
+            .map(({ pathImage, languages, title, discription, viewLinks ,ShortDiscription}) => {
               return (
                 <>
                   <ProjectCard
@@ -51,6 +51,7 @@ export default function ProjectSection() {
                     title={title}
                     discription={discription}
                     viewLinks={viewLinks}
+                    ShortDiscription={ShortDiscription}
                   />
                 </>
               );

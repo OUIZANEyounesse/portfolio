@@ -26,13 +26,14 @@ const page = () => {
           <div className="flex flex-wrap justify-start  gap-4 my-12">
             {/* cards */}
             {projects.map(
-              ({ pathImage, languages, title, discription, viewLinks }) => (
+              ({ pathImage, languages, title, discription, viewLinks,ShortDiscription }) => (
                 <ProjectCard
                   pathImage={pathImage}
                   languages={languages}
                   title={title}
                   discription={discription}
                   viewLinks={viewLinks}
+                  ShortDiscription ={ShortDiscription}
                 />
               )
             )}

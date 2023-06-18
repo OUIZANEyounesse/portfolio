@@ -22,6 +22,7 @@ export interface ProjectCardProps {
   title: string;
   discription: string;
   viewLinks: any;
+  ShortDiscription:string;
 }
 export interface SkillsCardProps {
   title: string;

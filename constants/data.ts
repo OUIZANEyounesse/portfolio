@@ -43,56 +43,56 @@ export const NavbarItem = [
 export const projects = [
   {
     pathImage:
-      "https://res.cloudinary.com/dnkuui7sz/image/upload/v1685039877/samples/sheep.jpg",
-    languages: ["html", "css", "javascript", "react", "tailwind css"],
-    title: "ChertNodes",
-    discription: "Minecraft servers hosting ",
+      "https://res.cloudinary.com/dnkuui7sz/image/upload/v1687100224/portfolio/FireShot_Capture_006_-_OUIZANE_Younesse_-_localhost_qsd9dw.png",
+    languages: ["Next js", "TypeScript", "Tailwind css","@headlessui"],
+    title: "Portfolio YOUIZANE",
+    discription: "Portfolio the OUIZANE Younesse ",
+    ShortDiscription: "Portfolio the OUIZANE Younesse ",
     viewLinks: [
       {
         title: "demo",
-        link: "",
-      },
-      {
-        title: "video",
-        link: "",
+        link: "https://youizane.netlify.app",
       },
       {
         title: "github",
-        link: "",
+        link: "https://github.com/OUIZANEyounesse/portfolio",
+      },
+    ],
+  },
+  
+  {
+    pathImage:
+      "https://res.cloudinary.com/dnkuui7sz/image/upload/v1687100014/portfolio/FireShot_Capture_005_-_YOuizane_Car_-_youizane-car.netlify.app_rdysbj.png",
+    languages: ["@headlessui", "Next Js", "Tailwind css","TypeScript"],
+    title: "YOUizane Car",
+    discription: "Find, book, or rent a car -quickly and easily!",
+    ShortDiscription: "Find, book, or rent a car -quickly and easily!",
+    viewLinks: [
+      {
+        title: "demo",
+        link: "https://youizane-car.netlify.app",
+      },
+      {
+        title: "github",
+        link: "https://github.com/OUIZANEyounesse/youizane-car",
       },
     ],
   },
   {
     pathImage:
-      "https://res.cloudinary.com/dnkuui7sz/image/upload/v1685039877/samples/sheep.jpg",
-    languages: ["html", "css", "javascript", "react", "tailwind css"],
-    title: "ChertNodes",
-    discription: "Minecraft servers hosting ",
+      "https://res.cloudinary.com/dnkuui7sz/image/upload/v1687100979/portfolio/admine_accueil_xwry53.png",
+    languages: ["Laravel", "MySQl" ,"bootstrap"],
+    title: "Gestion FSTE",
+    discription: "Having reached the third year of bachelor&rsquo;s degree in technical science in Software Engineering, a graduation project is asked to accomplish. Our choice related to design and realize a software product. After name- many researches, We have come to realize a platform of teacher. We have chosen our tools in a way consistent with our work philosophy. Thus, this platform is a key process for many universities committed to improving their service, accelerating administrative flows and time reduction. The application we develop allows us to: -Create a student phase -Create a teacher phase -Create an administrator phase Finally, this project entitled FSTE platform is structured around the three following chapters: -the first chapter will be devoted to the pre-study, in which we will give an overview of the objectives of application, a study and a critique of the existing. -In the second chapter, we will discuss the design of the application by studying the data kill. -And in the third chapter, we will describe our solution and test its functionality. Indeed, we want our system to be open, scalable, scalable and ergonomic while maintaining its efficiency .",
+    ShortDiscription: "project end of study developed with Rachidi Abdelhamid ",
     viewLinks: [
-      {
-        title: "demo",
-        link: "",
-      },
       {
         title: "video",
         link: "",
       },
-    ],
-  },
-  {
-    pathImage:
-      "https://res.cloudinary.com/dnkuui7sz/image/upload/v1685039877/samples/sheep.jpg",
-    languages: ["html", "css", "javascript", "react", "tailwind css"],
-    title: "ChertNodes",
-    discription: "Minecraft servers hosting ",
-    viewLinks: [
       {
-        title: "demo",
-        link: "",
-      },
-      {
-        title: "video",
-        link: "",
+        title: "document",
+        link: "https://www.overleaf.com/read/vvpvksghmxsf",
       },
     ],
   },
@@ -101,29 +101,28 @@ export const projects = [
 export const skills = [
   {
     title: "Languages",
-    languages: ["TypeScript", "Lua", "Python", "JavaScript"],
+    languages: ["C#", "js", "PHP"],
   },
-  { title: "Databases", languages: ["SQLite", "PostgreSQL", "Mongo"] },
+  { title: "Databases", languages: ["MYSQL", "SQL SERVER"] },
   {
     title: "Tools",
     languages: [
       "VSCode",
-      "Neovim",
-      "Linux",
-      "Figma",
-      "XFCE",
-      "Arch",
       "Git",
       "Font Awesome",
     ],
   },
   {
     title: "Other",
-    languages: ["HTML", "CSS", "EJS", "SCSS", "REST", "Jinja"],
+    languages: ["HTML", "CSS", "QraphQL","REST"],
   },
   {
     title: "Frameworks",
-    languages: ["React", "Vue", "Disnake", "Discord.js", "Flask", "Express.js"],
+    languages: ["React", "NEXT JS", "DOT NET", "Laravel"],
+  },
+  {
+    title: "Analyse",
+    languages: ["UML", "Merise"],
   },
 ];
 
