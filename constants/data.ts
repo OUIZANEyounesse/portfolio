@@ -12,6 +12,12 @@ export const InfoProfile = {
     youtube: "https://www.youtube.com/@younesseouizane",
     whatsapp: "https://wa.me/212708862613",
   },
+  socialAlias: {
+    linkedin: "@younesse-ouizane",
+    github: "@OUIZANEyounesse",
+    youtube: "@younesseouizane",
+    whatsapp: "",
+  },
 };
 export const NavbarLinks = {
   home: "/",
