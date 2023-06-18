@@ -130,8 +130,4 @@ export const skills = [
 export const  FunFactsItems = [
   "I like winter more than summer",
   "Something I can improve about myself is my software knowledge, which is why I currently take technology courses during the evenings and weekends",
-  "I like winter more than summer",
-  "I like winter",
-  "I like winter more than summer",
-  "I like winter more than summer",
 ];
